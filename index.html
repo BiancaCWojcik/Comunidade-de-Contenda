@@ -6,19 +6,18 @@
     <title>Documentário Fotográfico - Contenda, Paraná</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            background: linear-gradient(135deg, #f0f4f8, #c3cfe2);
             transition: background 0.5s;
         }
         header {
             background-color: #34495e;
             color: white;
-            padding: 30px 0;
+            padding: 40px 0;
             text-align: center;
-            transition: background-color 0.5s;
+            border-bottom: 2px solid #f1f1f1;
         }
         header h1 {
             font-size: 3.5em;
@@ -33,38 +32,29 @@
             margin: 30px auto;
             padding: 20px;
             background-color: white;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .container:hover {
-            transform: scale(1.02);
         }
         .image-section {
-            margin-bottom: 40px;
             text-align: center;
+            margin-bottom: 30px;
         }
         .image-section img {
             width: 100%;
+            max-width: 800px;
             height: auto;
             border-radius: 10px;
             cursor: pointer;
-            transition: transform 0.3s;
+            transition: transform 0.3s ease;
         }
         .image-section img:hover {
             transform: scale(1.05);
         }
         .description {
             font-size: 1.1em;
-            margin-top: 10px;
+            margin-top: 15px;
             color: #555;
-            transition: color 0.3s;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #34495e;
-            color: white;
+            display: none;
         }
         .interactive-btn {
             background-color: #1abc9c;
@@ -75,10 +65,17 @@
             margin-top: 20px;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease;
         }
         .interactive-btn:hover {
             background-color: #16a085;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #34495e;
+            color: white;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -86,15 +83,18 @@
 
 <header>
     <h1>Documentário Fotográfico - Contenda, Paraná</h1>
-    <p>Explorando os espaços que promovem saúde, bem-estar e integração na nossa comunidade</p>
+    <p>Explorando espaços de saúde, bem-estar e integração na nossa comunidade</p>
 </header>
 
 <div class="container">
     <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Portal.jpeg" alt="Portal da cidade de Contenda" onclick="showDescription('portal')">
-        <p class="description" id="portal" style="display:none;">O portal de entrada de Contenda é mais do que um marco geográfico; ele representa o acolhimento da comunidade e a identidade local, refletindo o compromisso da cidade com a inclusão e o bem-estar dos seus habitantes.</p>
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Portal.jpeg" alt="Portal da cidade de Contenda" onclick="toggleDescription('portal')">
+        <p class="description" id="portal">
+            O Portal de Contenda não é apenas uma entrada simbólica da cidade, mas representa o acolhimento e a identidade de uma comunidade que valoriza a saúde e o bem-estar de seus habitantes. Este portal é o marco que une todas as iniciativas locais.
+        </p>
     </div>
 
     <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Gin%C3%A1sio.jpeg" alt="Ginásio de Esportes" onclick="showDescription('ginásio')">
-        <p class="description" id="ginásio" style="display:none;">O ginásio de esportes de Contenda é um
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Gin%C3%A1sio.jpeg" alt="Ginásio de Esportes" onclick="toggleDescription('ginásio')">
+        <p class="description" id="ginásio">
+            O Ginásio de Esportes de Contenda é um
