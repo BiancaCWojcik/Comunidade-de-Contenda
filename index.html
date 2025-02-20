@@ -1,52 +1,160 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentário Fotográfico - Minha Comunidade</title>
+    <title>Documentário Fotográfico - Contenda, Paraná</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
             margin: 0;
             padding: 0;
+            color: #333;
+            overflow-x: hidden;
         }
-        h1 {
+        header {
+            background-color: #34495e;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            letter-spacing: 2px;
         }
-        .image-card {
-            margin: 20px;
-            width: 300px;
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .image-section {
+            margin-bottom: 40px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
         }
-        .image-card img {
+        .image-section img {
             width: 100%;
-            border-radius: 8px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
         }
-        .description {
-            padding: 10px;
+        .image-section:hover {
+            transform: scale(1.05);
+        }
+        .image-section p {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.3em;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 5px;
+            width: calc(100% - 40px);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+            position: relative;
+        }
+        footer p {
+            font-size: 1.1em;
+        }
+        .image-section img {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+        .image-section:nth-child(1) img {
+            animation-delay: 0.5s;
+        }
+        .image-section:nth-child(2) img {
+            animation-delay: 1s;
+        }
+        .image-section:nth-child(3) img {
+            animation-delay: 1.5s;
+        }
+        .image-section:nth-child(4) img {
+            animation-delay: 2s;
+        }
+        .image-section:nth-child(5) img {
+            animation-delay: 2.5s;
+        }
+        .image-section:nth-child(6) img {
+            animation-delay: 3s;
+        }
+        .image-section:nth-child(7) img {
+            animation-delay: 3.5s;
+        }
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Documentário Fotográfico - Minha Comunidade</h1>
-    
-    <div class="content">
-        <div class="image-card">
-            <img src="imagem1.jpg" alt="Imagem do Ginásio de Esportes">
-            <div class="description">
-                <h3>Ginásio de Esportes</h3>
-                <p>O ginásio de esportes é um local central onde muitos dos projetos da comunidade acontecem. A diversidade de atividades mostra a inclusão e o incentivo ao bem-estar da população.</p>
-            </div>
-        </div>
+<header>
+    <h1>Documentário Fotográfico - Contenda, Paraná</h1>
+    <p>Explorando os espaços de bem-estar e comunidade em Contenda</p>
+</header>
+
+<div class="container">
+    <div class="image-section">
+        <img src="imagens/Portal.jpg" alt="Portal da cidade de Contenda">
+        <p>Portal da cidade de Contenda, Paraná, um símbolo da recepção calorosa da cidade.</p>
     </div>
+
+    <div class="image-section">
+        <img src="imagens/Ginasio.jpg" alt="Ginásio de Esportes">
+        <p>Ginásio de esportes, centro de atividades físicas e promoção de saúde.</p>
+    </div>
+
+    <div class="image-section">
+        <img src="imagens/Exercicios.jpg" alt="Máquinas de Exercícios">
+        <p>Máquinas de exercícios ao ar livre, oferecendo uma opção gratuita de exercício para a comunidade.</p>
+    </div>
+
+    <div class="image-section">
+        <img src="imagens/Estatua.jpg" alt="Estátua do Cristo">
+        <p>Estátua do Cristo, um ponto simbólico que traz união e identidade para a cidade.</p>
+    </div>
+
+    <div class="image-section">
+        <img src="imagens/Corridas.jpg" alt="Pista de Corrida">
+        <p>Pista de corrida iluminada à noite, incentivando a prática de exercícios noturnos.</p>
+    </div>
+
+    <div class="image-section">
+        <img src="imagens/Corridas1.jpg" alt="Pista de Corrida à Noite - Imagem 1">
+        <p>Pista de corrida à noite, com iluminação que proporciona um ambiente seguro e agradável para os atletas.</p>
+    </div>
+
+    <div class="image-section">
+        <img src="imagens/Corridas2.jpg" alt="Pista de Corrida à Noite - Imagem 2">
+        <p>Outro ângulo da pista de corrida iluminada, destacando a infraestrutura que favorece a prática de atividades físicas após o anoitecer.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Documentário Fotográfico - Contenda, Paraná</p>
+</footer>
 
 </body>
 </html>
