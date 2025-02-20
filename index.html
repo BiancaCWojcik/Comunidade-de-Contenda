@@ -11,14 +11,12 @@
             margin: 0;
             padding: 0;
             color: #333;
-            transition: background 0.5s;
         }
         header {
             background-color: #34495e;
             color: white;
             padding: 30px 0;
             text-align: center;
-            transition: background-color 0.5s;
         }
         header h1 {
             font-size: 3.5em;
@@ -35,10 +33,6 @@
             background-color: white;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
-            transition: transform 0.3s;
-        }
-        .container:hover {
-            transform: scale(1.02);
         }
         .image-section {
             margin-bottom: 40px;
@@ -58,7 +52,7 @@
             font-size: 1.1em;
             margin-top: 10px;
             color: #555;
-            transition: color 0.3s;
+            display: none;
         }
         footer {
             text-align: center;
@@ -75,7 +69,6 @@
             margin-top: 20px;
             cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s;
         }
         .interactive-btn:hover {
             background-color: #16a085;
@@ -92,37 +85,37 @@
 <div class="container">
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Portal.jpeg" alt="Portal da cidade de Contenda" onclick="showDescription('portal')">
-        <p class="description" id="portal" style="display:none;">O portal de entrada de Contenda é mais do que um marco geográfico; ele representa o acolhimento da comunidade e a identidade local, refletindo o compromisso da cidade com a inclusão e o bem-estar dos seus habitantes.</p>
+        <p class="description" id="portal">O portal de entrada de Contenda é mais do que um marco geográfico; ele representa o acolhimento da comunidade e a identidade local, refletindo o compromisso da cidade com a inclusão e o bem-estar dos seus habitantes.</p>
     </div>
 
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Gin%C3%A1sio.jpeg" alt="Ginásio de Esportes" onclick="showDescription('ginásio')">
-        <p class="description" id="ginásio" style="display:none;">O ginásio de esportes de Contenda é um ponto central onde a comunidade se reúne para práticas de esportes e atividades físicas. Ele simboliza como a cidade fomenta a saúde, o esporte e o lazer como fatores de integração social e melhoria da qualidade de vida.</p>
+        <p class="description" id="ginásio">O ginásio de esportes de Contenda é um ponto central onde a comunidade se reúne para práticas de esportes e atividades físicas. Ele simboliza como a cidade fomenta a saúde, o esporte e o lazer como fatores de integração social e melhoria da qualidade de vida.</p>
     </div>
 
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Exerc%C3%ADcios.jpeg" alt="Máquinas de Exercícios" onclick="showDescription('exercícios')">
-        <p class="description" id="exercícios" style="display:none;">As máquinas de exercícios ao ar livre, instaladas ao lado do ginásio, são uma alternativa acessível para os moradores de todas as idades se manterem ativos e saudáveis. Elas exemplificam como a cidade se preocupa com o bem-estar da comunidade, oferecendo opções de exercício ao ar livre e de baixo custo.</p>
+        <p class="description" id="exercícios">As máquinas de exercícios ao ar livre, instaladas ao lado do ginásio, são uma alternativa acessível para os moradores de todas as idades se manterem ativos e saudáveis. Elas exemplificam como a cidade se preocupa com o bem-estar da comunidade, oferecendo opções de exercício ao ar livre e de baixo custo.</p>
     </div>
 
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Est%C3%A1tua.jpeg" alt="Estátua Cristo" onclick="showDescription('estátua')">
-        <p class="description" id="estátua" style="display:none;">A estátua do Cristo em Contenda não é apenas um ponto turístico, mas um símbolo de fé e amor pela cidade. A inscrição 'Eu Amo Contenda' reforça a conexão da população com o lugar, evidenciando o orgulho e a união da comunidade.</p>
+        <p class="description" id="estátua">A estátua do Cristo em Contenda não é apenas um ponto turístico, mas um símbolo de fé e amor pela cidade. A inscrição 'Eu Amo Contenda' reforça a conexão da população com o lugar, evidenciando o orgulho e a união da comunidade.</p>
     </div>
 
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas.jpeg" alt="Pista de Corrida" onclick="showDescription('corridas')">
-        <p class="description" id="corridas" style="display:none;">A pista de corrida é um exemplo de como a cidade valoriza a prática de atividades físicas. Ela oferece um ambiente seguro para os corredores, permitindo que a população se exercite ao ar livre, promovendo saúde e bem-estar de forma acessível.</p>
+        <p class="description" id="corridas">A pista de corrida é um exemplo de como a cidade valoriza a prática de atividades físicas. Ela oferece um ambiente seguro para os corredores, permitindo que a população se exercite ao ar livre, promovendo saúde e bem-estar de forma acessível.</p>
     </div>
 
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas1.jpeg" alt="Corridas Noturnas" onclick="showDescription('corridas1')">
-        <p class="description" id="corridas1" style="display:none;">A pista de corrida iluminada à noite é uma das grandes inovações que a cidade oferece. Ela permite que moradores de diferentes horários possam praticar esportes com segurança, incentivando hábitos saudáveis em toda a comunidade.</p>
+        <p class="description" id="corridas1">A pista de corrida iluminada à noite é uma das grandes inovações que a cidade oferece. Ela permite que moradores de diferentes horários possam praticar esportes com segurança, incentivando hábitos saudáveis em toda a comunidade.</p>
     </div>
 
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas2.jpeg" alt="Corridas à noite" onclick="showDescription('corridas2')">
-        <p class="description" id="corridas2" style="display:none;">A iluminação da pista de corrida não só facilita a prática noturna de esportes, mas também proporciona uma sensação de segurança para todos que desejam manter um estilo de vida ativo após o trabalho ou durante a noite.</p>
+        <p class="description" id="corridas2">A iluminação da pista de corrida não só facilita a prática noturna de esportes, mas também proporciona uma sensação de segurança para todos que desejam manter um estilo de vida ativo após o trabalho ou durante a noite.</p>
     </div>
 
     <button class="interactive-btn" onclick="alert('Parabéns por explorar a saúde e o bem-estar em Contenda!')">Explorar mais!</button>
