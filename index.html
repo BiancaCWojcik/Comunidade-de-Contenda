@@ -11,16 +11,22 @@
             margin: 0;
             padding: 0;
             color: #333;
+            transition: background 0.5s;
         }
         header {
             background-color: #34495e;
             color: white;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
+            transition: background-color 0.5s;
         }
         header h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
         .container {
             max-width: 1200px;
@@ -28,6 +34,11 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.02);
         }
         .image-section {
             margin-bottom: 40px;
@@ -37,6 +48,17 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+        .description {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #555;
+            transition: color 0.3s;
         }
         footer {
             text-align: center;
@@ -44,55 +66,35 @@
             background-color: #34495e;
             color: white;
         }
+        .interactive-btn {
+            background-color: #1abc9c;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .interactive-btn:hover {
+            background-color: #16a085;
+        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>Documentário Fotográfico - Contenda, Paraná</h1>
-    <p>Um olhar sobre os espaços que fomentam a comunidade, a saúde e o bem-estar.</p>
+    <p>Explorando os espaços que promovem saúde, bem-estar e integração na nossa comunidade</p>
 </header>
 
 <div class="container">
     <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Portal.jpeg" alt="Portal da cidade de Contenda">
-        <p><strong>Portal da cidade de Contenda:</strong> O portal da cidade é o primeiro contato visual que os visitantes têm com Contenda. Representa não só a entrada para a cidade, mas também o acolhimento e a receptividade da comunidade local. O portal é símbolo de um espaço que promove união e identidade.</p>
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Portal.jpeg" alt="Portal da cidade de Contenda" onclick="showDescription('portal')">
+        <p class="description" id="portal" style="display:none;">O portal de entrada de Contenda é mais do que um marco geográfico; ele representa o acolhimento da comunidade e a identidade local, refletindo o compromisso da cidade com a inclusão e o bem-estar dos seus habitantes.</p>
     </div>
 
     <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Gin%C3%A1sio.jpeg" alt="Ginásio de Esportes">
-        <p><strong>Ginásio de Esportes:</strong> O ginásio é um ponto central na vida esportiva da cidade. Aqui, acontecem eventos e atividades físicas que envolvem uma grande parcela da comunidade, proporcionando inclusão e desenvolvimento físico. É um exemplo de como espaços urbanos podem ser utilizados para promover o bem-estar coletivo.</p>
-    </div>
-
-    <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Exerc%C3%ADcios.jpeg" alt="Máquinas de Exercícios">
-        <p><strong>Máquinas de Exercícios:</strong> Localizadas ao lado do ginásio de esportes, as máquinas de exercícios ao ar livre são uma excelente alternativa para quem busca atividades físicas gratuitas e acessíveis. Elas demonstram como a cidade proporciona opções para a promoção de saúde e qualidade de vida para todas as idades.</p>
-    </div>
-
-    <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Est%C3%A1tua.jpeg" alt="Estátua Cristo">
-        <p><strong>Estátua do Cristo e a frase 'Eu Amo Contenda':</strong> A estátua do Cristo é mais do que um ponto turístico, é um marco de fé e união. A frase 'Eu Amo Contenda' reflete o sentimento de pertencimento e orgulho da população local, sendo um símbolo do carinho e da dedicação com que a cidade acolhe seus moradores e visitantes.</p>
-    </div>
-
-    <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas.jpeg" alt="Pista de Corrida">
-        <p><strong>Pista de Corrida:</strong> A pista de corrida é um excelente exemplo de como a cidade valoriza a prática de esportes ao ar livre. Ela oferece um ambiente seguro e adequado para os corredores, além de ser iluminada à noite, proporcionando acessibilidade para quem prefere a prática noturna, incentivando ainda mais o hábito saudável de se exercitar.</p>
-    </div>
-
-    <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas1.jpeg" alt="Corridas Noturnas">
-        <p><strong>Corridas Noturnas:</strong> A pista iluminada à noite demonstra o comprometimento da cidade em garantir que a prática de atividades físicas esteja acessível em diferentes horários, para se adequar às necessidades da população. A iluminação permite que os moradores desfrutem de um espaço seguro para exercícios após o expediente.</p>
-    </div>
-
-    <div class="image-section">
-        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas2.jpeg" alt="Corridas à noite">
-        <p><strong>Corridas à Noite:</strong> As corridas noturnas não só incentivam a prática esportiva, mas também promovem uma sensação de segurança e bem-estar para os participantes. A pista iluminada é um ótimo exemplo de como a infraestrutura urbana pode ser utilizada para garantir que as pessoas pratiquem atividades físicas de maneira segura e confortável, independentemente do horário.</p>
-    </div>
-</div>
-
-<footer>
-    <p>Documentário fotográfico de Contenda, Paraná. Feito com carinho para mostrar a importância dos espaços públicos e comunitários para a saúde e o bem-estar!</p>
-</footer>
-
-</body>
-</html>
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Gin%C3%A1sio.jpeg" alt="Ginásio de Esportes" onclick="showDescription('ginásio')">
+        <p class="description" id="ginásio" style="display:none;">O ginásio de esportes de Contenda é um
