@@ -3,114 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contenda: Saúde e Bem-Estar</title>
+    <title>Documentário Fotográfico - Contenda, Paraná</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #f5f7fa, #c3cfe2);
             margin: 0;
             padding: 0;
+            color: #333;
+            transition: background 0.5s;
         }
-
         header {
-            background-color: #4CAF50;
+            background-color: #34495e;
             color: white;
-            padding: 15px;
+            padding: 30px 0;
             text-align: center;
+            transition: background-color 0.5s;
         }
-
-        h1 {
+        header h1 {
+            font-size: 3.5em;
             margin: 0;
         }
-
-        section {
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
             padding: 20px;
-            margin: 20px;
-        }
-
-        .image-container {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .image-container img {
-            max-width: 90%;
-            height: auto;
+            background-color: white;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            transition: transform 0.3s;
         }
-
-        .content {
-            font-size: 16px;
-            line-height: 1.6;
+        .container:hover {
+            transform: scale(1.02);
         }
-
-        footer {
-            background-color: #4CAF50;
-            color: white;
+        .image-section {
+            margin-bottom: 40px;
             text-align: center;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+        }
+        .image-section img {
+            width: 80%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-section img:hover {
+            transform: scale(1.05);
+        }
+        .description {
+            font-size: 1.1em;
+            margin-top: 10px;
+            color: #555;
+            transition: color 0.3s;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #34495e;
+            color: white;
+        }
+        .interactive-btn {
+            background-color: #1abc9c;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .interactive-btn:hover {
+            background-color: #16a085;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Contenda: Saúde e Bem-Estar</h1>
+    <h1>Documentário Fotográfico - Contenda, Paraná</h1>
+    <p>Explorando os espaços e desafios na promoção de saúde e bem-estar em nossa comunidade, com foco no acesso à informação sobre práticas preventivas.</p>
 </header>
 
-<section>
-    <h2>Sobre Contenda</h2>
-    <div class="image-container">
-        <img src="https://github.com/BiancaCWojcik/Comunidade-de-Contenda/blob/main/Portal.jpeg?raw=true" alt="Portal de Contenda">
+<div class="container">
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Portal.jpeg" alt="Portal da cidade de Contenda">
+        <p class="description">O portal de entrada de Contenda é um ponto de referência significativo para a cidade, simbolizando boas-vindas e sendo um marco importante na integração da comunidade.</p>
     </div>
-    <p class="content">
-        Contenda é um município localizado no estado do Paraná, Brasil. Conhecida por sua rica produção agrícola, a cidade é também um ponto de referência para quem busca qualidade de vida e bem-estar. O Portal de Entrada de Contenda é um símbolo acolhedor que dá as boas-vindas aos visitantes e representa a hospitalidade e o acolhimento da cidade.
-    </p>
-</section>
 
-<section>
-    <h2>Importância da Saúde e Bem-Estar</h2>
-    <div class="image-container">
-        <img src="https://github.com/BiancaCWojcik/Comunidade-de-Contenda/blob/main/Est%C3%A1tua.jpeg?raw=true" alt="Estátua do Cristo em Contenda">
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Gin%C3%A1sio.jpeg" alt="Ginásio de Esportes">
+        <p class="description">O ginásio de esportes, um importante centro de lazer, oferece uma excelente oportunidade para promover atividades físicas que contribuem para a prevenção de doenças e melhoria da qualidade de vida.</p>
     </div>
-    <p class="content">
-        A saúde e o bem-estar são essenciais para o desenvolvimento e a qualidade de vida de qualquer comunidade. A prática de atividades físicas, a educação em saúde preventiva e o acesso a informações sobre cuidados adequados são fundamentais para uma vida mais saudável. Em Contenda, a saúde da população é priorizada por meio de diversas iniciativas que incentivam hábitos saudáveis e o cuidado preventivo.
-    </p>
-</section>
 
-<section>
-    <h2>Projetos de Saúde e Esporte em Contenda</h2>
-    <p class="content">
-        Contenda conta com diversos projetos esportivos e de saúde voltados para a comunidade, como práticas de vôlei, futebol para a melhor idade e outras atividades. Esses projetos buscam incentivar a população a se envolver com o esporte, promovendo não apenas o bem-estar físico, mas também a integração social e a saúde mental.
-    </p>
-    <div class="image-container">
-        <img src="https://github.com/BiancaCWojcik/Comunidade-de-Contenda/blob/main/Gin%C3%A1sio.jpeg?raw=true" alt="Ginásio de Contenda">
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Exerc%C3%ADcios.jpeg" alt="Máquinas de Exercícios">
+        <p class="description">As máquinas de exercício ao ar livre proporcionam uma forma acessível de melhorar a saúde física, permitindo que a comunidade aproveite esse espaço para o bem-estar e prevenção.</p>
     </div>
-</section>
 
-<section>
-    <h2>Benefícios da Prática de Exercícios</h2>
-    <p class="content">
-        A prática regular de exercícios físicos oferece inúmeros benefícios à saúde, como o fortalecimento do sistema cardiovascular, controle de peso e redução do estresse. Além disso, a atividade física contribui para a melhora da qualidade de vida e bem-estar, aumentando a disposição, a energia e promovendo a integração social. Em Contenda, espaços como o Ginásio Municipal são fundamentais para o desenvolvimento de atividades físicas que beneficiam toda a população.
-    </p>
-</section>
-
-<section>
-    <h2>Projetos de Saúde Preventiva e Bem-Estar</h2>
-    <p class="content">
-        Além dos esportes, Contenda também investe em programas de saúde preventiva para orientar a população sobre cuidados importantes como alimentação saudável, exames de rotina e a importância de hábitos saudáveis no cotidiano. A educação em saúde é essencial para prevenir doenças e melhorar a qualidade de vida da comunidade.
-    </p>
-    <div class="image-container">
-        <img src="https://github.com/BiancaCWojcik/Comunidade-de-Contenda/blob/main/Corridas.jpeg?raw=true" alt="Atividade física ao ar livre">
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Est%C3%A1tua.jpeg" alt="Estátua Cristo">
+        <p class="description">A estátua do Cristo é um ícone religioso e cultural que também representa a importância de cuidar da saúde mental e espiritual, um aspecto fundamental para o bem-estar geral.</p>
     </div>
-</section>
+
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas.jpeg" alt="Pista de Corrida">
+        <p class="description">A pista de corrida oferece um excelente espaço para a prática de exercícios físicos ao ar livre, incentivando a adoção de hábitos saudáveis e a prevenção de doenças.</p>
+    </div>
+
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas1.jpeg" alt="Corridas Noturnas">
+        <p class="description">A pista iluminada à noite é uma ótima opção para quem deseja praticar atividades físicas em horários alternativos, promovendo a saúde e o bem-estar durante o dia todo.</p>
+    </div>
+
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas2.jpeg" alt="Corridas à noite">
+        <p class="description">A iluminação da pista de corrida permite a prática de exercícios durante a noite, tornando o espaço acessível para todos e estimulando a adoção de um estilo de vida saudável.</p>
+    </div>
+
+    <button class="interactive-btn" onclick="alert('Explorar os espaços de saúde e bem-estar de Contenda é o primeiro passo para melhorar a qualidade de vida e promover saúde preventiva!')">Explorar mais!</button>
+</div>
 
 <footer>
-    <p>&copy; 2025 Contenda | Promovendo Saúde e Bem-Estar</p>
+    <p>Documentário fotográfico de Contenda, Paraná. Refletindo sobre os desafios e as oportunidades de promover saúde na comunidade, alinhando com a ODS 3 de Saúde e Bem-Estar.</p>
 </footer>
+
+<script>
+    // Nenhuma mudança necessária no código de interação
+</script>
 
 </body>
 </html>
