@@ -87,6 +87,7 @@
 </header>
 
 <div class="container">
+    <!-- Portal -->
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Portal.jpeg" alt="Portal da cidade de Contenda" onclick="toggleDescription('portal')">
         <p class="description" id="portal">
@@ -94,7 +95,71 @@
         </p>
     </div>
 
+    <!-- Ginásio -->
     <div class="image-section">
         <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Gin%C3%A1sio.jpeg" alt="Ginásio de Esportes" onclick="toggleDescription('ginásio')">
         <p class="description" id="ginásio">
-            O Ginásio de Esportes de Contenda é um
+            O Ginásio de Esportes de Contenda é um centro de integração, onde a comunidade participa de atividades físicas que incentivam a saúde e promovem a união social. Ele é palco de eventos e práticas que conectam todas as idades e estilos de vida.
+        </p>
+    </div>
+
+    <!-- Exercícios -->
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Exerc%C3%ADcios.jpeg" alt="Máquinas de Exercícios" onclick="toggleDescription('exercícios')">
+        <p class="description" id="exercícios">
+            As máquinas de exercícios ao ar livre oferecem uma maneira gratuita e acessível para a população de todas as idades se manter ativa. Elas representam a ideia de saúde e bem-estar ao alcance de todos, sem custos adicionais.
+        </p>
+    </div>
+
+    <!-- Estátua -->
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Est%C3%A1tua.jpeg" alt="Estátua Cristo" onclick="toggleDescription('estátua')">
+        <p class="description" id="estátua">
+            A Estátua do Cristo é um ícone de fé e pertencimento. Com a inscrição "Eu Amo Contenda", ela simboliza o espírito de união e amor pela cidade, criando um ambiente de tranquilidade e positividade para os moradores.
+        </p>
+    </div>
+
+    <!-- Corridas -->
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas.jpeg" alt="Pista de Corrida" onclick="toggleDescription('corridas')">
+        <p class="description" id="corridas">
+            A pista de corrida em Contenda é um espaço dedicado à prática de esportes, proporcionando um local seguro e acessível para quem deseja melhorar sua saúde física e mental. É um exemplo claro de como a cidade valoriza a qualidade de vida de seus moradores.
+        </p>
+    </div>
+
+    <!-- Corridas Noturnas -->
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas1.jpeg" alt="Corridas Noturnas" onclick="toggleDescription('corridas1')">
+        <p class="description" id="corridas1">
+            A iluminação da pista de corrida à noite garante que todos possam se exercitar, independentemente da hora do dia. Isso promove a prática de esportes como uma rotina saudável e segura, ao mesmo tempo em que fortalece o senso de comunidade.
+        </p>
+    </div>
+
+    <!-- Corridas à Noite -->
+    <div class="image-section">
+        <img src="https://raw.githubusercontent.com/BiancaCWojcik/Comunidade-de-Contenda/main/Corridas2.jpeg" alt="Corridas à noite" onclick="toggleDescription('corridas2')">
+        <p class="description" id="corridas2">
+            A visão noturna da pista de corrida revela a cidade como um espaço dinâmico e inclusivo, onde os moradores podem se exercitar a qualquer hora. A iluminação não só garante segurança, mas também incentiva a participação de todos, independentemente da idade.
+        </p>
+    </div>
+
+    <button class="interactive-btn" onclick="alert('Parabéns por explorar os espaços saudáveis de Contenda!')">Explorar mais!</button>
+</div>
+
+<footer>
+    <p>Documentário fotográfico de Contenda, Paraná. Celebrando os espaços que promovem saúde, bem-estar e união.</p>
+</footer>
+
+<script>
+    function toggleDescription(id) {
+        var description = document.getElementById(id);
+        if (description.style.display === 'block') {
+            description.style.display = 'none';
+        } else {
+            description.style.display = 'block';
+        }
+    }
+</script>
+
+</body>
+</html>
